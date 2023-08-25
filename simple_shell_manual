@@ -1,0 +1,62 @@
+.TH MY_SHELL 1 "2023-08-25" "Linux" "custom shell manual"
+.SH NAME
+.B my_shell
+- custom shell command interpreter
+.SH SYNOPSIS
+.b ./my_shell
+[
+.I command
+]
+[
+.I options
+]
+.SH DESCRIPTION
+.B my_shell
+serves as a command line interpreter developed as an ALX project. It is a simplified variant of the standard Linux shell. The program was designed and compiled on
+.I Ubuntu 14.04 LTS
+using
+.I GCC 4.8.4.
+.SH OPTIONS
+
+.B cd - change current directory
+
+.P
+.B env - display environment variables
+
+.P
+.B exit - exit the shell
+
+.SH FILES
+
+.B builtins - verifies whether a command is built-in
+
+.P
+.B execute - manages the execution of new processes
+
+.P
+.B customheader - header file
+
+.P
+.B custom_printf - basic function emulating printf features
+
+.P
+.B parsetokens - includes functions for token parsing and memory freeing
+
+.P
+.B pathhandler - functions related to handling the PATH
+
+.P
+.B myshell - main function for initiating and using the shell
+
+.P
+.B custom_tools - auxiliary tools
+
+.P
+.B more_custom_tools - additional helper tools
+
+.SH EXAMPLE
+:~/custom_shell$ ./my_shell
+.P ($)
+.P ($)ls
+.P builtins.c  execute.c  customheader.h  parsetokens.c  pathhandler.c  custom_printf.c  README.md  myshell.c  more_custom_tools.c  custom_tools.c
+.P ($)exit
